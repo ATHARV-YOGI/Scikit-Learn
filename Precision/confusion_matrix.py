@@ -7,3 +7,6 @@ cm = confusion_matrix(y_true, y_pred)
 
 print("confusion matrix")
 print(cm)
+
+
+# mostly used for fraud detection
