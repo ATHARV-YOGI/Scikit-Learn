@@ -32,3 +32,18 @@ plt.xlabel("final age")
 plt.ylabel("avg glucose levvel")
 plt.grid(True)
 plt.show()
+
+
+plt.figure(figsize=(10, 6))
+plt.scatter(x, y,color = 'blue', label='actual score')
+plt.plot(x,predicted_scores,color='red',label="predicted scores(regression line)")
+plt.title("distribution of final exam scores")
+plt.xlabel("final age")
+plt.ylabel("avg glucose levvel")
+plt.grid(True)
+plt.show()
+
+
+new_hours = 9
+predicted_new_score = model.predict([[new_hours]])
+print(f"predicted final score for {new_hours} hours is {predicted_new_score} score")
